@@ -18,15 +18,19 @@ header{
     font-size: 45px;
     padding-bottom: 20px;
 }
+/* header .row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}  */
 
-/*search button*/
+/*search button */
 .searchbar{
     margin-bottom: auto;
     margin-top: auto;
-    height: 60px;
+    height: 50px;
     background-color: #353b48;
-    border-radius: 30px;
-    padding: 10px;
+    border-radius: 50px;
+    padding: 5px;
 }
 
 .search_input{
@@ -41,7 +45,7 @@ header{
 }
 .searchbar:hover > .search_input{
     padding: 0 10px;
-    width: 250px;
+    width: 200px;
   
     caret-color: rgba(254,197,70,1);  
     transition: width 0.4s linear;
@@ -65,12 +69,30 @@ header{
     text-decoration:none;
 }
 /*search button*/
-.navbar{
+.header-content .row{
     display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
+     align-items: center;
+    justify-content: center;
 }
-
+/*  */
+.navbar-toggler{
+	border: 1px solid #15a4fa !important;
+    padding: 5px !important;
+}
+.navbar-toggler span{
+	display: block;
+    background: #15a4fa;
+    height: 4px;
+    width: 40px;
+    margin: 5px;
+}
+.navbar-toggler:hover{
+background:#2d2950;
+border: 1px solid #2d2950;
+}
+.navbar-toggler:hover span{
+	background: #fff;
+}
 
 .navbar-left, .navbar-right, .navbar-middle{
     display: flex;
@@ -78,21 +100,30 @@ header{
     align-items: center;
     list-style-type: none;
 }
+
 .navbar-middle {
-    justify-content: center;
-    flex-basis:20%;
+    justify-content: center; 
 }
 .navbar-left {
     justify-content: left;
-    flex-basis:40%;
 }
 .navbar-right {
-    justify-content: right;
-    flex-basis:40%;
+    justify-content: right; 
 }
-.navbar-middle a{
+.navbar-middle {
     color: #2c160b;
     font-size: 32px;
+}
+.navbar-left .nav-item{
+    display: flex;
+    align-items: center;
+}
+.navbar-right .nav-item{
+    display: flex;
+    align-items: center;
+}
+.navbar-right .nav-link{
+  margin-left:20px;
 }
 .navbar-nav .nav-link{
     color: #000000;
@@ -141,6 +172,8 @@ header p{
     color:#fff;
     padding-bottom: 10px;
 }
+
+
 
 /*about-section*/
 .about-section{
@@ -526,6 +559,80 @@ footer li a:hover{
 }
 
 
+/**********smartphone, , android phone(480/320px) portrait,  portrait iphone*******/
+@media (max-width: 760px){
+    
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: .5rem 1rem;}
+    .col-xl-3
+        {position: relative;
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;}
+    header .row {
+        display: flex;
+       align-items: center;
+       justify-content: center;
+    
+    } 
+    .navbar-left li a{
+        display: block;
+      
+    }
+    .header-inner a i{
+        color: black;
+        border: 2px solid black;
+        border-radius: 20px;
+        padding: 5px ;
+      
+    }
+    .header-inner .row{
+
+        display: flex;
+        flex-wrap:nowrap;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+      
+    }
+    header p{
+        color:black;
+        padding-bottom: 10px;
+    }
+    
+    
+    
+    .services{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2%;
+         }
+         .faq-section .row{
+             display: grid;
+             grid-template-columns: 1fr;
+         }
+         .footer .row{
+             display: grid;
+             grid-template-columns: repeat(3, 1fr);
+             align-items: center;
+             justify-content: center;
+             
+         }
+         .social-icons li{
+            list-style-type: none;
+            padding-right: 15px;
+            padding-left: 0;
+
+          }
+     .footer-note p{
+    font-size:14px;
+}     
+}
 
 
 
@@ -545,7 +652,7 @@ footer li a:hover{
 
 
 
-/*/
+/*
 .nav-link {
     display: block;
       position: relative;
@@ -956,13 +1063,19 @@ footer ul li a:hover {
     width: 14%;
 }
 }
-/**********smartphone, , android phone(480/320px) portrait,  portrait iphone********
+/**********smartphone, , android phone(480/320px) portrait,  portrait iphone******
 @media (max-width: 480px){
-	.nav-link::after {
-    content: '';
-    position: absolute;
-    left: 41%;
-    bottom: 20%;
-    width: 18%;
+	.header-inner a i{
+    color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px ;
+  
 }
+header p{
+    color:black;
+    font-size: 14;
+    padding-bottom: 10px;
+}
+
 }
