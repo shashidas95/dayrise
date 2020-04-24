@@ -10,66 +10,51 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Dayrise</title>
 </head>
-
 <body>
-
   <header>
     <div class="container">
-      <nav class="navbar navbar-expand-lg ">
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon danger"></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <div class="col-xl-3">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav navbar-left mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-                <a class="nav-link" href="#">Catagory</a>
-              </li>
-            </ul>
-          </div>
+      <div class="logo">
+          <a class="navbar-brand" href="#">
+           <img src="images/dayrise-logo.png" alt="logo" class="img-fluid"></a>
         </div>
-
-
-        <div class="col-xl-6 text-center">
-          <a class="navbar-brand navbar-middle" href="#"><img src="images/dayrise-logo.png" alt=" logo"
-              class="img-fluid">
-        </div>
-
-        <div class="col-xl-3 ">
-
-          <ul class="navbar-nav navbar-right ml-auto">
-            <div class="searchbar">
-              <input class="search_input" type="text" name="" placeholder="Search...">
-              <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+        <nav class="navbar navbar-expand-lg ">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              <span></span>
+              <span></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="col-lg-12">  
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"> <a class="nav-link" href="#">Home</a> </li>
+                    <li class="nav-item">  <a class="nav-link" href="#">Catalog</a> </li>
+                </ul>
             </div>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
-            </li>
-          </ul>
         </div>
-      </nav>
+ </nav>
+        <div class="search">
+          <div class="searchbar">
+            <input class="search_input" type="text" placeholder="Search...">
+              <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+          </div>
+        </div>                      
+        <div class="addToCard">
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>           
     </div>
-
-
-
     <div class="container">
       <div class="header-content">
         <div class="row justify-content-center align-items-center">
-          <div class=" col-xl-6 ">
+          <div class=" col-lg-6 ">
             <div class="heading">
               <h1>Scientifically Validated
                 Daily Immunity Protection </h1>
               <div class="header-inner">
-                <div class="row">
+                <div class="row justify-content-center align-items-center">
                   <div class="col-md-1">
                     <a href="#"><i class="fas fa-check"></i></a>
                   </div>
@@ -79,7 +64,7 @@
                 </div>
               </div>
               <div class="header-inner">
-                <div class="row">
+                <div class="row  justify-content-center align-items-center">
                   <div class="col-md-1">
                     <a href="#"><i class="fas fa-check"></i></a>
                   </div>
@@ -91,15 +76,12 @@
               <button type="button" class="btn-custom">Shop Now</button>
             </div>
           </div>
-          <div class="col-xl-6 ">
+          <div class="col-lg-6 ">
             <img src="./images/dayrise-product1.png" alt="" class="img-fluid">
           </div>
-
         </div>
       </div>
-
     </div>
-
   </header>
   <!--header section-->
 
@@ -107,41 +89,41 @@
   <section class="about-section">
     <div class="container">
       <div class="row justify-content-center align-items-center text-center">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+        <div class="col-lg-6 col-md-6 col-sm-6">
           <h2>About Dayrise</h2>
           <span></span>
-          <a href="#"><img src="./images/plus-icon.png" alt=""></a>
+          <a href="#"><img src="./images/plus-icon.png" alt="" class="img-span img-fluid"></a>
           <span></span>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Quis ipsum.</p>
         </div>
       </div>
       <div class="row justify-content-center align-items-center text-center">
-        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
+        <div class="col-lg-8 col-md-8 col-sm-8">
           <div class="services">
 
             <div class="service">
-              <i class="fas fa-globe-americas fa-4x"></i>
-              <h5>Proudly Made In Australia</h5>
-              <p>Manufactured at a HAACP and GMP approved facility in Melbourne, Australia. </p>
+            <img src="./images/icon_1.png" class="img-fluid">
+            <h5>Proudly Made In Australia</h5>
+            <p>Manufactured at a HAACP and GMP approved facility in Melbourne, Australia. </p>
             </div>
 
             <div class="service">
-              <i class="fas fa-flask fa-4x"></i>
-              <h5>3rd Party Test</h5>
-              <p>To ensure efficacy of our product we are 3rd party tested for un-biased peace of mind </p>
+            <img src="./images/icon_2.png" class="img-fluid">
+            <h5>3rd Party Test</h5>
+            <p>To ensure efficacy of our product we are 3rd party tested for un-biased peace of mind </p>
             </div>
 
             <div class="service">
-              <i class="fas fa-balance-scale fa-4x"></i>
-              <h5>High Potenncy Formula</h5>
-              <p>Every capsule holds the highest grade of scienctifically purpose driven
+            <img src="./images/icon_3.png" class="img-fluid">
+            <h5>High Potenncy Formula</h5>
+            <p>Every capsule holds the highest grade of scienctifically purpose driven
                 ingredients designed to protect the immune system during flue season. No fillers or artificial
                 ingredients are used.</p>
             </div>
 
             <div class="service">
-              <i class="fas fa-shield-alt fa-4x"></i>
+              <img src="./images/icon_4.png" class="img-fluid">
               <h5>Long Term Immunity</h5>
               <p>Delivered straight to your door for ease and convenience. Subscription available. </p>
             </div>
@@ -157,18 +139,47 @@
   <!--formula section-->
   <section class="formula-section">
     <div class="container">
-      <div class="row justify-content-center align-items-center text-center">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-          <h2>Formula</h2>
+      <div class="formula-content text-center">
+        <h2>Formula</h2>
           <span></span>
           <a href="#"><img src="./images/plus-icon.png" alt=""></a>
           <span></span>
           <p>Check our hero ingradients</p>
-        </div>
+       
       </div>
       <div class="row justify-content-center align-items-center text-center">
-        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
-          <img src="./images/round-img.png" class="img-fluid">
+        <div class="col-lg-12  ">
+            <div class="formulas">
+          <img src="./images/dayrise-product2.png" alt="" class="img-fluid formula-img"> 
+        <div class="top-left">
+          <img src="./images/top-left.png" alt="" class="img-fluid">
+          <strong>Vitamin C</strong>
+        </div>
+        <div class="center-left">
+          <img src="./images/center-left.png" alt="" class="img-fluid">
+          <strong>Vitamin D</strong>
+        </div>
+        <div class="bottom-left">
+          <img src="./images/top-left.png" alt="" class="img-fluid">
+          <strong>Olive leave Extract</strong>
+        </div>
+         <div class="top-right">
+          <img src="./images/top-right.png" alt="" class="img-fluid">
+          <strong>Fulvic Acid </strong>
+          <p>Known to render and inactivate certain strains of influenza and virusets</p>
+        </div>
+        <div class="center-right">
+          <img src="./images/center-right.png" alt="" class="img-fluid">
+          <strong>Andrographics</strong>
+          <p>Provides relief of mild upper respiratory tract and influenza symptoms.</p>
+        </div>
+         <div class="bottom-right">
+          <img src="./images/bottom-right.png" alt="" class="img-fluid">
+          <strong>Zinc Chelate</strong>
+          <p>Provides relief of mild upper respiratory tract and influenza symptoms.</p>
+        </div>
+            
+          </div>
         </div>
       </div>
     </div>
@@ -179,20 +190,16 @@
   <section class="promise-section text-center align-items-center">
     <div class="container">
       <div class="row justify-content-center align-items-center text-center">
-        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
+        <div class="col-lg-8 col-md-8 col-sm-8">
           <div class="promise">
-
             <h4>Our Promises</h4>
             <h2> 60 days Gaurantee</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
               viverra maeceiusmod tempor incididunt utek.</p>
-
             <a href="#" class="btn-promise">Learn More <i class="fas fa-chevron-right"></i></a>
-
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -203,14 +210,12 @@
   <section class="testimonial-section text-center align-items-center">
     <div class="container">
       <div class="row justify-content-center align-items-center text-center">
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="testimonial">
-
             <h4>Testimonial</h4>
             <h2> Lorem ipsum dolor sit amet.</h2>
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
-
           <!-- Grid row -->
           <div class="row">
             <!-- Grid column -->
@@ -229,7 +234,6 @@
             <!-- Grid column -->
             <!-- Grid column -->
             <div class="col-md-4 mb-4">
-
               <div class="card">
                 <div class="card-block p-3">
                   <!--Title-->
@@ -269,7 +273,7 @@
   <section class="faq-section">
     <div class="container">
       <div class="row justify-content-center align-items-center text-center">
-        <div class="col-xl-6 ">
+        <div class="col-lg-6 ">
           <div class="faq-heading">
             <h2>Frequently Asked Questions</h2>
             <span></span>
@@ -281,7 +285,7 @@
       </div>
 
       <div class="row question justify-content-center align-items-center text-left">
-        <div class="col-xl-6 ">
+        <div class="col-lg-6 ">
           <h4>Have any Questions?</h4>
           <form class="form">
             <div class="form-group">
@@ -302,7 +306,7 @@
           </form>
 
         </div>
-        <div class="col-xl-6 ">
+        <div class="col-lg-6 ">
 
           <div class="accordion" id="accordionExample">
             <div class="card">
@@ -369,19 +373,7 @@
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="card-header collapsed" data-toggle="collapse" data-target="#collapseSix"
-                aria-expanded="false">
-                <span class="title">Lorem ipsum dolor sit amet, consectetur adipis?</span>
-                <span class="accicon"><i class="fas fa-angle-down rotate-icon"></i></span>
-              </div>
-              <div id="collapseSix" class="collapse" data-parent="#accordionExample">
-                <div class="card-body">
-                  Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
-              </div>
-            </div>
+            
           </div>
 
         </div>
@@ -393,7 +385,7 @@
   <section class="how-section">
     <div class="container">
       <div class="row justify-content-center align-items-center text-center">
-        <div class=" col-xl-6">
+        <div class=" col-lg-6">
           <div class="heading-info">
             <h5>Lorem ipsom</h5>
             <h2>How to Dayrise</h2>
@@ -408,40 +400,41 @@
       </div>
 
       <div class="row justify-content-center align-items-center text-left">
-        <div class="col-lg-5">
+        <div class="col-lg-5 how-inner">
           <div class="row  align-items-start">
-            <div class="col-md-2  text-center">
-              <i class="fas fa-shipping-fast fa-2x"></i>
+            <div class="col-md-2 text-center">
+            <img src="./images/aeroplane-img.png" class="img-fluid">
             </div>
-            <div class="col-md-10 text-center ">
+            <div class="col-md-10 text-left ">
               <h5>Free Shipping</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+              <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
             </div>
           </div>
 
           <div class="row  align-items-start">
             <div class="col-md-2 text-center">
-              <i class="fas fa-money-check fa-2x"></i>
+              <img src="./images/pay-img.png" class="img-fluid">
+             
             </div>
-            <div class="col-md-10 text-center ">
+            <div class="col-md-10 text-left ">
               <h5>Secured Payment</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+              <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
             </div>
           </div>
 
           <div class="row  align-items-start ">
             <div class="col-md-2  text-center">
-              <i class="fas fa-undo-alt fa-2x"></i>
+             <img src="./images/return-img.png" class="img-fluid">
             </div>
-            <div class="col-md-10 text-center ">
+            <div class="col-md-10 text-left ">
               <h5>60 Days Free Return</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+              <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
             </div>
           </div>
 
         </div>
-        <div class="col-lg-6">
-          <img src="./images/dayrise-product2.png" class="img-fluid">
+        <div class="col-lg-7">
+          <img src="./images/dayrise-product2.png" class="img-fluid ">
         </div>
       </div>
 
@@ -454,13 +447,13 @@
     <div class="container">
       <div class="footer-form">
         <div class="row ">
-          <div class=" col-xl-12">
+          <div class=" col-lg-12">
             <div class="row justify-content-center align-items-center">
-              <div class="col-xl-4 ">
+              <div class="col-lg-4 ">
                 <h1>Newsletter</h1>
                 <p><small>Lorem ipsum dolor sit amet,</small></p>
               </div>
-              <div class=" col-xl-8 ">
+              <div class=" col-lg-8 ">
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="email-address" name="email"> <i
                     class="far fa-paper-plane"></i>
@@ -477,31 +470,33 @@
       <div class="footer">
 
         <div class="row ">
-          <div class="col-xl-3 ">
+          <div class="col-lg-3 ">
             <h3>Dayrise</h3>
             <p><small>Lorem ipsum dolor sit met, consectetur adipiscing tempor incididunt ut.</small></p>
           </div>
-          <div class="col-xl-3 ">
+          <div class="col-lg-3 ">
             <h6>Explore</h6>
             <ul class="links">
               <li><a href="#">Home</a></li>
               <li><a href="#">Catalog</a></li>
             </ul>
           </div>
-          <div class="col-xl-3 ">
+          <div class="col-lg-3 ">
             <h6>Address</h6>
             <p>14 Ellis ST,<br>
               South Yarra, 3141</p>
           </div>
-          <div class="col-xl-3 ">
+          <div class="col-lg-3 ">
             <h6>Contact</h6>
             <p>protectme@dayrise.com.au<br>
               Phone +000 123 456 789</p>
-            <ul class="social-icons">
+              <div class="social-icon">
+                <ul class="social-icons">
               <li><a href="#"><i class="fab fa-twitter"></i></a></li>
               <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
               <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            </ul>
+            </ul></div>
+            
           </div>
 
         </div>
