@@ -178,7 +178,7 @@ header {
     z-index: 9;
 }
 .addToCard i {
-    position: fixed;
+    position: absolute;
     top: 6%;
     right: 16%;
     color: #15141a;
@@ -318,61 +318,104 @@ box-shadow: 0px 2px 15px rgba(104, 104, 104, 0.5);
     position:relative;
 }
 
-
 .top-left{
     position: absolute;
     top: 0;
    left: 10%;}
+
+.top-left strong{
+    position: absolute;
+    top: 94%;
+    left: 10%;
+
+}
+
 .center-left{
     position: absolute;
     top: 38%;
     left: 5%;
 }
-.bottom-left{
+.center-left strong{
     position: absolute;
-    bottom: 26px;
+    top: 98%;
+    left: 5%;
+}
+.bottom-left{
+   position: absolute;
+    bottom: 11%;
     left: 10%;
 }
+.bottom-left strong{
+   position: absolute;
+    bottom: -83px;
+    left: 10%;
 
+}
 
 .top-right{
     position: absolute;
     top: 0;
      right:-10%;
 }
+.top-right strong{
+    position: absolute;
+    top: 50%;
+    right: 39%;
+}
 .center-right{
     position: absolute;
     top: 37%;
     right: -20%;
 }
+.center-right strong{
+   position: absolute;
+    top: 50%;
+    right: 36%;
+}
 .bottom-right{
     position: absolute;
-    bottom: -37px;
+    bottom: -5%;
     right: -10%;
 
 }
-.top-right p,.center-right p, .bottom-right p{
-  max-width: 80%;
-  margin:auto;
-  text-align: center;
+.bottom-right strong{
+   position: absolute;
+    bottom: 33%;
+    right: 37%;
+}
+.top-right p{
+      padding-top: 6%;
+}
+.center-right p{
+        padding-top: 6%;
+}
+.bottom-right p{
+    padding-top: 6%;
 
 }
 .top-right img,.center-right img, .bottom-right img, .top-left img,.center-left img, .bottom-left img{
-    background: #fff;
-    border: 2px solid #fff;
-    width: 125px;
-    height: 125px;
-    line-height: 125px;
+   background: #fff;
+    border: 5px solid #fff;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
     border-radius: 50%;
 }
 .formula-img{
-        padding-right: 8%;
+    padding-right: 8%;
 }
+.circle-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);      
+}
+
 /*promise secrion*/
 
 .promise-section{
     padding:50px 0 ;
-   }
+}
 
 .btn-promise{
     background: #f9a547;
@@ -682,14 +725,22 @@ footer li a:hover{
 
 
 /**********big landscape tablets, laptop and desktop*/
+
+
 @media (min-width: 1200px){
-.showcase::before {
-    content: '';
+.addToCard i {
     position: absolute;
-    width: 100%;
-    height: 0;
-    left: 0%;
-        bottom: 0;}
+    top: 4%;
+    right: 4%;
+    color: #15141a;
+}
+
+.heading h1 {
+    display: inline;
+    color: #000;
+    font-size: 52px;
+    font-weight: 900;
+}
 }
 
 
@@ -792,9 +843,27 @@ header p{
     font-size: 14;
     padding-bottom: 10px;
     }
-
+.top-right p, .center-right p, .bottom-right p {
+    max-width: 50%;
+    text-align: left;
+    font-size: 14px;
 }
-/**********smartphone, , android phone(480/320px) portrait,  portrait iphone*******/
+.top-right {
+    position: absolute;
+    top: 0;
+    right: -12%;
+}
+.center-right{
+    position: absolute;
+    top: 37%;
+    right: -34%;
+}
+.bottom-right{
+position: absolute;
+    bottom: -16%;
+    right: -21%;
+}
+/**********smartphone, , android phone(768px) portrait,  portrait iphone*******/
 @media (max-width: 768px){
 header{
     position: relative;
